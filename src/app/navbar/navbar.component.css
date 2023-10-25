@@ -1,0 +1,52 @@
+/* Estilos gerais do navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A9C685;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+/* Estilo do nome e avaliação do usuário à direita da foto */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo da foto do usuário */
+.user-photo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding-right: 15px; /* Espaçamento entre a foto e o nome/avaliação */
+}
+
+.user-details {
+    text-align: left;
+}
+
+/* Estilos do conteúdo à direita do navbar */
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo dos botões de acesso às outras páginas */
+.nav-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo dos ícones de alertas e chat */
+.icon {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 10px;
+}
