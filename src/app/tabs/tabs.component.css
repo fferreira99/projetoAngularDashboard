@@ -1,0 +1,45 @@
+.tabs {
+    display: flex;
+    border-radius: none;
+    overflow: hidden;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #F4F1E9; /* Cor de fundo da guia */
+    border: none; /* Remover a borda */
+    margin-right: 0;
+    position: relative;
+  }
+  
+  .tab:first-child {
+    border-radius: 8px 0 0 0;
+  }
+  
+  .tab:last-child {
+    border-radius: 0 8px 0 0;
+  }
+  
+  .tab:hover {
+    background-color: #EDE9D9; /* Cor de fundo da guia ao passar o mouse */
+  }
+  
+  .tab-content {
+    padding: 20px;
+    border: none;
+    display: none;
+    background-color: #F4F1E9;
+    border-radius: 0 8px 8px 8px;
+    height: 500px;
+  }
+  
+  .tab-content[style*="block"] {
+    display: block;
+  }
+  
+ 
+.tab.active {
+    border-bottom: 2px solid #3C6609; /* Aumentar a espessura e/ou ajustar a cor */
+}
+  
