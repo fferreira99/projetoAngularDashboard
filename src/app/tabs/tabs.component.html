@@ -1,8 +1,15 @@
 <div class="tabs">
-    <div class="tab" (click)="openTab('tab1')" [class.active]="isTabActive('tab1')">Planejamento diário</div>
-    <div class="tab" (click)="openTab('tab2')" [class.active]="isTabActive('tab2')">Índices de desempenho</div>
-    <div class="tab" (click)="openTab('tab3')" [class.active]="isTabActive('tab3')">Histórico de coletas</div>
+    <div class="tab" (click)="openTab('tab1')" [class.active]="isTabActive('tab1')">
+      <p id="titulo-tab">Planejamento diário</p>
+    </div>
+    <div class="tab" (click)="openTab('tab2')" [class.active]="isTabActive('tab2')">
+      <p id="titulo-tab">Índices de desempenho</p>
+    </div>
+    <div class="tab" (click)="openTab('tab3')" [class.active]="isTabActive('tab3')">
+      <p id="titulo-tab">Histórico de coletas</p>
+    </div>
   </div>
+
   <div class="content">
     <div id="tab1" class="tab-content" [ngStyle]="{ display: isTabActive('tab1') ? 'block' : 'none' }">
       Conteúdo da Guia 1.
