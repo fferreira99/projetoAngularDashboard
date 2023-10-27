@@ -6,31 +6,30 @@
   
   .tab {
     cursor: pointer;
-    padding: 0px 15px 0px 15px; padding: valor-top valor-direita valor-inferior valor-esquerda;
-    background-color: #F4F1E9; /* Cor de fundo da guia */
+    padding: 0px 15px 0px 15px;
+    /*background-color: #ffffff; /* Cor de fundo da guia */
     border: none; /* Remover a borda */
     margin-right: 0;
     position: relative;
   }
   
   .tab:first-child {
-    border-radius: 8px 0 0 0;
+    border-radius: 0 0 0 0;
   }
   
   .tab:last-child {
-    border-radius: 0 8px 0 0;
+    border-radius: 0 0 0 0;
   }
   
   .tab:hover {
-    background-color: #EDE9D9; /* Cor de fundo da guia ao passar o mouse */
+    background-color: #F4F1E9; /* Cor de fundo da guia ao passar o mouse */
   }
-  
+
   .tab-content {
     padding: 20px;
     border: none;
     display: none;
     background-color: #F4F1E9;
-    border-radius: 0 8px 8px 8px;
     height: 650px;
   }
   
@@ -41,6 +40,7 @@
  
 .tab.active {
     border-bottom: 2px solid #3C6609; /* Aumentar a espessura e/ou ajustar a cor */
+    background-color: #F4F1E9;
 }
   
 #titulo-tab {

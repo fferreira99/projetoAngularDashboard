@@ -10,6 +10,14 @@
     height: 90px;
 }
 
+/* Estilo para o container flexível */
+.button-flex-container {
+    width: 225px;
+    display: flex;
+    justify-content: space-between; /* Espaça os botões igualmente no container */
+  }
+  
+
 /* Estilo do nome e avaliação do usuário à direita da foto */
 .user-info {
     display: flex;
@@ -34,16 +42,25 @@
     align-items: center;
 }
 
-/* Estilo dos botões de acesso às outras páginas */
-.nav-button {
-    background-color: #555;
-    color: #fff;
+/* Estilo base para um botão */
+#navbotton {
+    display: inline-block;
     padding: 10px 20px;
-    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #2B463C; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-}
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilo quando o mouse está sobre o botão */
+  #navbotton:hover {
+    background-color: #F4F1E9; /* Cor de fundo alterada no hover */
+  }
+  
 
 /* Estilo dos ícones de alertas e chat */
 .icon {

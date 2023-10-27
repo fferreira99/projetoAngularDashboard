@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { MapaDeColetasComponent } from './mapa-de-coletas/mapa-de-coletas.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     TabsComponent,
     NavbarComponent,
     FooterComponent,
+    MapaDeColetasComponent,
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,13 +7,13 @@
         </div>
     </div>
     <div class="navbar-content">
-        <button class="nav-button">Página 1</button>
-        <button class="nav-button">Página 2</button>
-        <i class="icon">🔔</i> <!-- Ícone de alertas -->
-        <i class="icon">💬</i> <!-- Ícone de chat -->
+        <div class="button-flex-container">
+            <button id="navbotton" (click)="direcionandoMapaDeColetas()">Mapa de coletas</button>
+            <button id="navbotton" (click)="direcionandoPerfil()">Perfil</button>
+        </div>
+        <div class="icon-flex-container">
+            <i class="icon">🔔</i>
+            <i class="icon">💬</i>
+        </div>
     </div>
 </div>
-
-
-
-
