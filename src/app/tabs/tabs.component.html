@@ -1,24 +1,31 @@
 <div class="tabs">
-    <div class="tab" (click)="openTab('tab1')" [class.active]="isTabActive('tab1')">
-      <p id="titulo-tab">Planejamento diário</p>
-    </div>
-    <div class="tab" (click)="openTab('tab2')" [class.active]="isTabActive('tab2')">
-      <p id="titulo-tab">Índices de desempenho</p>
-    </div>
-    <div class="tab" (click)="openTab('tab3')" [class.active]="isTabActive('tab3')">
-      <p id="titulo-tab">Histórico de coletas</p>
-    </div>
+  <div class="tab" (click)="openTab('tab1')" [class.active]="isTabActive('tab1')">
+    <p id="titulo-tab">Planejamento diário</p>
   </div>
+  <div class="tab" (click)="openTab('tab2')" [class.active]="isTabActive('tab2')">
+    <p id="titulo-tab">Índices de desempenho</p>
+  </div>
+  <div class="tab" (click)="openTab('tab3')" [class.active]="isTabActive('tab3')">
+    <p id="titulo-tab">Histórico de coletas</p>
+  </div>
+</div>
 
-  <div class="content">
-    <div id="tab1" class="tab-content" [ngStyle]="{ display: isTabActive('tab1') ? 'block' : 'none' }">
-      Conteúdo da Guia 1.
-    </div>
-    <div id="tab2" class="tab-content" [ngStyle]="{ display: isTabActive('tab2') ? 'block' : 'none' }">
-      Conteúdo da Guia 2.
-    </div>
-    <div id="tab3" class="tab-content" [ngStyle]="{ display: isTabActive('tab3') ? 'block' : 'none' }">
-      Conteúdo da Guia 3.
-    </div>
+<div class="content">
+  <div id="tab1" class="tab-content" [ngStyle]="{ display: isTabActive('tab1') ? 'block' : 'none' }">
+    Planejamento diário.
+    <ng-container id="planejamento-diário">
+      <app-coletas-agendadas></app-coletas-agendadas>
+    </ng-container>
+  <div id="tab2" class="tab-content" [ngStyle]="{ display: isTabActive('tab2') ? 'block' : 'none' }">
+    Índices de desempenho.
+    <ng-container id="indices-de-desempenho">
+      <app-indices-de-desempenho></app-indices-de-desempenho>
+    </ng-container>
   </div>
-  
+  <div id="tab3" class="tab-content" [ngStyle]="{ display: isTabActive('tab3') ? 'block' : 'none' }">
+    Histórico	de coletas.
+    <ng-container id="historico-de-coletas">
+      <app-historico-de-coletas></app-historico-de-coletas>
+    </ng-container>
+  </div>
+</div>

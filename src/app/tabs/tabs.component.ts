@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './tabs.component.html',
   styleUrls: ['./tabs.component.css']
 })
+
 export class TabsComponent {
   activeTab: string = 'tab1';
 

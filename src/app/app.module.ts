@@ -8,6 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MapaDeColetasComponent } from './mapa-de-coletas/mapa-de-coletas.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { ColetasAgendadasComponent } from './coletas-agendadas/coletas-agendadas.component';
+import { IndicesDeDesempenhoComponent } from './indices-de-desempenho/indices-de-desempenho.component';
+import { HistoricoDeColetasComponent } from './historico-de-coletas/historico-de-coletas.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { PerfilComponent } from './perfil/perfil.component';
     FooterComponent,
     MapaDeColetasComponent,
     PerfilComponent,
+    ColetasAgendadasComponent,
+    IndicesDeDesempenhoComponent,
+    HistoricoDeColetasComponent,
   ],
   imports: [
     BrowserModule,
