@@ -11,21 +11,30 @@
 </div>
 
 <div class="content">
+
   <div id="tab1" class="tab-content" [ngStyle]="{ display: isTabActive('tab1') ? 'block' : 'none' }">
-    Planejamento diário.
+    <!--Planejamento diário.-->
     <ng-container id="planejamento-diário">
-      <app-coletas-agendadas></app-coletas-agendadas>
+      <div class="tab1">
+        <app-coletas-agendadas></app-coletas-agendadas>
+        <app-minimapa-de-coletas></app-minimapa-de-coletas>
+      </div>
     </ng-container>
+  </div>
+
   <div id="tab2" class="tab-content" [ngStyle]="{ display: isTabActive('tab2') ? 'block' : 'none' }">
     Índices de desempenho.
     <ng-container id="indices-de-desempenho">
       <app-indices-de-desempenho></app-indices-de-desempenho>
     </ng-container>
   </div>
+
   <div id="tab3" class="tab-content" [ngStyle]="{ display: isTabActive('tab3') ? 'block' : 'none' }">
     Histórico	de coletas.
     <ng-container id="historico-de-coletas">
       <app-historico-de-coletas></app-historico-de-coletas>
     </ng-container>
   </div>
+
 </div>
+

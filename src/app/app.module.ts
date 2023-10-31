@@ -11,6 +11,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { ColetasAgendadasComponent } from './coletas-agendadas/coletas-agendadas.component';
 import { IndicesDeDesempenhoComponent } from './indices-de-desempenho/indices-de-desempenho.component';
 import { HistoricoDeColetasComponent } from './historico-de-coletas/historico-de-coletas.component';
+import { MinimapaDeColetasComponent } from './minimapa-de-coletas/minimapa-de-coletas.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HistoricoDeColetasComponent } from './historico-de-coletas/historico-de
     ColetasAgendadasComponent,
     IndicesDeDesempenhoComponent,
     HistoricoDeColetasComponent,
+    MinimapaDeColetasComponent,
   ],
   imports: [
     BrowserModule,
